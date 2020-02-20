@@ -1,0 +1,62 @@
+body {
+background: rgb(0, 132, 255);
+font: normal 15pt Arial;
+}
+
+header {
+color: white;
+text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
+}
+
+#visor, #answer {
+    width: 300px;
+    height: 50px;
+    font-size: 150%;
+    text-align: right;
+    border: none;
+}
+
+#visor{
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.027);
+    color: black;
+    margin: auto;
+}
+
+#answer{
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+    color: black;
+    margin: auto;
+}
+
+input[type=button] {
+    height: 60px;
+    width: 60px;
+    font-size: 100%;
+    color: rgb(0, 0, 0);
+    background: rgba(116, 103, 103, 0.562);
+    margin: 1px;
+    border-radius: 8px;
+    border: none;
+}
+
+input[type=button]:hover{
+    background: rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+}
+
+footer {
+color: white;
+text-align: center;
+font-style: italic;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo" value="Calculadora">Calculadora</h1>
+        <p>Minha calculadora criada em JavaScript, HTML e CSS.</p>
+    </header>
+    <section>
+        <div>
+            
+            <input type="text" id="visor" placeholder="0" readonly="readonly"> <br />
+            <input type="text" id="answer" readonly="readonly"> <br />
+
+            
+            <input type="button" id="clear" value="CE" onclick="backspace()">
+            <br />
+            <input type="button" id="one" value=1 onclick="insert(document.getElementById(`one`).value)">
+            <input type="button" id="two" value=2 onclick="insert(document.getElementById(`two`).value)">
+            <input type="button" id="three" value=3 onclick="insert(document.getElementById(`three`).value)">
+            <input type="button" id="plus" value="+" onclick="insert(document.getElementById(`plus`).value)">
+            <br />
+            <input type="button" id="four" value=4 onclick="insert(document.getElementById(`four`).value)">
+            <input type="button" id="five" value=5 onclick="insert(document.getElementById(`five`).value)">
+            <input type="button" id="six" value=6 onclick="insert(document.getElementById(`six`).value)">
+            <input type="button" id="subtract" value="-" onclick="subtract()">
+            <br />
+            <input type="button" id="seven" value=7 onclick="insert(document.getElementById(`seven`).value)">
+            <input type="button" id="eight" value=8 onclick="insert(document.getElementById(`eight`).value)">
+            <input type="button" id="nine" value=9 onclick="insert(document.getElementById(`nine`).value)">
+            <input type="button" id="multiply" value="*" onclick="multiply()">
+            <br />
+            <input type="button" id="ponto" value="." onclick="insert(document.getElementById(`ponto`).value)">
+            <input type="button" id="zero" value="0" onclick="insert(document.getElementById(`zero`).value)">
+            <input type="button" id="division" value="/" onclick="division()">
+            <input type="button" id="equal" value="=" onclick="equal(document.getElementById(`visor`).value)">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Thlimass</p>
+    </footer>
+    <script src="calc.js"></script>
+</body>
+</html> 
